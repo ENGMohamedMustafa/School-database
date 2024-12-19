@@ -1,5 +1,4 @@
 # School-database
-# School database
 # Students:
 Stores student information including 
 first name, last name, date of birth, gender, and enrollment date.
