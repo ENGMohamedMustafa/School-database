@@ -1,0 +1,42 @@
+# Entities and Attributes
+# Embeddings
+id (Primary Key)
+created_at
+content
+embedding
+Migrations
+version (Primary Key)
+name
+applied_at
+# Class
+id (Primary Key)
+name
+teacher_id (Foreign Key)
+school_id (Foreign Key)
+Enrollment
+id (Primary Key)
+student_id (Foreign Key)
+class_id (Foreign Key)
+School
+id (Primary Key)
+name
+address
+established_year
+# Student
+id (Primary Key)
+name
+age
+grade
+school_id (Foreign Key)
+# Teacher
+id (Primary Key)
+name
+subject
+school_id (Foreign Key)
+# Relationships
+Class has a many-to-one relationship with Teacher (each class is taught by one teacher).
+Class has a many-to-one relationship with School.
+Enrollment has a many-to-one relationship with Class.
+Enrollment has a many-to-one relationship with Student.
+Student has a many-to-one relationship with School.
+Teacher has a many-to-one relationship with School.
